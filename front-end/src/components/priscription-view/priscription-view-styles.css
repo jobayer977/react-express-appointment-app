@@ -1,0 +1,26 @@
+.prescription-view-content {
+	height: 80vh;
+	z-index: 9999;
+}
+
+.card {
+	height: 80vh;
+}
+.prescription-view-content {
+	height: 80vh !important;
+	overflow-y: scroll !important;
+}
+.prescription-view-conten::-webkit-scrollbar {
+	width: 5px;
+	background-color: transparent;
+}
+
+.prescription-view-conten::-webkit-scrollbar-thumb {
+	border-radius: 15px;
+	-webkit-box-shadow: inset 0 0 6px #fff;
+	background-color: #fff;
+}
+
+.prescription-view-conten:hover::-webkit-scrollbar-thumb {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}

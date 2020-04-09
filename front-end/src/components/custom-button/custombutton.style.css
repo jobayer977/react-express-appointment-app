@@ -1,0 +1,39 @@
+.custom-btn {
+	border: none;
+	font-size: 15px;
+	color: #fff;
+	font-weight: 500;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 10px 12px;
+	background: #10cfe5; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#dd2476,
+		#ff512f
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#18d3b1,
+		#10d0ea
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	outline: none;
+	transition: 0.4s all ease-in-out;
+	opacity: 0.9;
+	cursor: pointer;
+}
+
+.custom-btn:hover {
+	opacity: 1;
+	outline: none;
+}
+.danger {
+	background: #f44336;
+}
+.cts-small.custom-btn {
+	padding: 5px 20px;
+	border-radius: 5px;
+	text-transform: capitalize;
+	width: 90px;
+}

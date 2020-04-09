@@ -1,0 +1,30 @@
+.not-found {
+	height: 90vh;
+	background-size: cover;
+	background-position: bottom;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.not-found h1 {
+	font-size: 140px;
+}
+
+.not-found p {
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 8px;
+}
+
+.not-found a {
+	text-decoration: none;
+	background: #10cfe5;
+	background: linear-gradient(to right, #18d3b1, #10d0ea);
+	padding: 10px 50px;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 24px;
+	margin-top: 40px;
+}

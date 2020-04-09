@@ -1,0 +1,78 @@
+.patient-table-block {
+	background: #fff;
+	padding: 30px 20px;
+	margin-top: 10vh;
+	height: 75vh;
+}
+.MuiTableCell-stickyHeader {
+	background: none !important;
+}
+.MuiTableCell-body {
+	color: black !important;
+	font-weight: 600 !important;
+}
+
+.appointment-block {
+	display: flex;
+	justify-content: space-between;
+	height: 80vh;
+	margin-top: 10vh;
+}
+
+.pick-date-block {
+	width: 40%;
+	height: 70vh;
+}
+
+.appointments-block {
+	width: 50%;
+	background: #fff;
+	height: 70vh;
+	padding: 20px 30px;
+}
+
+.react-calendar {
+	height: 100%;
+}
+.appointment-block {
+	display: flex;
+	justify-content: space-between;
+	height: 80vh;
+	margin-top: 10vh;
+}
+
+.pick-date-block {
+	width: 40%;
+	height: 70vh;
+}
+
+.appointments-block {
+	width: 50%;
+	background: #fff;
+	height: 70vh;
+	padding: 20px 30px;
+}
+
+.react-calendar {
+	height: 100%;
+}
+
+.content-heading {
+	display: flex;
+	justify-content: space-between;
+	height: 15%;
+	align-items: center;
+}
+
+.till-date {
+	font-size: 16px;
+	letter-spacing: 2px;
+	color: #434343;
+}
+
+.appointment-list {
+	height: 85%;
+}
+.MuiTableBody-root {
+	text-transform: capitalize !important;
+}

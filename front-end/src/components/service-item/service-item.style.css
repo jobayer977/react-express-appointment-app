@@ -1,0 +1,73 @@
+.service {
+	height: 250px;
+	box-shadow: 1px 0px 9px 5px #f9fafa;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-direction: column;
+	padding: 40px 0px;
+	margin-bottom: 30px;
+}
+
+.service h4 {
+	color: #18c7be;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.service h5 {
+	font-size: 15px;
+	color: #3c4648;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.service p {
+	font-size: 14px;
+	color: #a4a4a4;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.appointment-form form {
+	width: 80%;
+	margin: 0 auto;
+}
+.appointment-form {
+	height: 80vh;
+	width: 100%;
+	background: #ffff;
+}
+
+.appointment-form {
+	padding: 40px 0px;
+}
+
+.appointment-form input {
+	padding: 10px;
+	width: 100%;
+	border: 0.5px solid #c3c3c3;
+	border-radius: 3px;
+	font-size: 14px;
+	color: #000000;
+	font-weight: 300;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.custom-btn-group {
+	/* margin-right: 10%; */
+	width: 30%;
+	display: flex;
+	justify-content: space-between;
+	margin-left: auto;
+}
+.select-gender {
+	text-align: left;
+	width: 300px;
+	margin-bottom: 15px;
+	height: 38px;
+	padding: 0px 20px;
+	display: flex;
+}

@@ -1,0 +1,95 @@
+.custom-table-block {
+	background: #fff;
+	padding: 30px 20px;
+	width: 100%;
+}
+
+.MuiTableCell-root {
+	padding: 16px 0px !important;
+	border: none !important;
+	color: #000;
+	font-weight: 500;
+}
+
+.MuiTableCell-head {
+	color: #918e8e;
+	text-transform: capitalize;
+	font-size: 14px;
+	font-weight: 400;
+}
+.MuiPaper-elevation1 {
+	box-shadow: none !important;
+}
+.table-heading {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 15px;
+}
+.react-appointment-block .secondary-title h4 {
+	margin: 0;
+}
+.MuiTableCell-paddingCheckbox {
+	padding-left: 40px !important;
+}
+.MuiInputBase-input {
+	width: 120px !important;
+}
+
+.MuiInput-underline:before {
+	border-bottom: none !important;
+}
+
+.MuiInput-underline:after {
+	border: none !important;
+}
+
+.MuiInputBase-root:hover {
+	border: none !important;
+	background: none !important;
+}
+
+.select-action option {
+	background: white;
+	padding: 5px 10px;
+	font-size: 16px;
+	color: #000;
+}
+.select-action {
+	color: #fff;
+	background: #fda006;
+	height: 30px;
+	width: 55px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	outline: none;
+}
+
+.select-action-options {
+	display: flex;
+	justify-content: space-around;
+	margin: 0 auto;
+}
+
+.tbl-sr-no {
+	width: 10%;
+}
+.tbl-date {
+	width: 10%;
+}
+.tbl-time {
+	width: 10%;
+}
+.tbl-name {
+	width: 25%;
+}
+.tbl-number {
+	width: 15%;
+}
+.tbl-prescription {
+	width: 10%;
+}
+.tbl-status {
+	width: 20%;
+}

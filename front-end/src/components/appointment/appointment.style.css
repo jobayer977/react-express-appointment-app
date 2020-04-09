@@ -1,0 +1,21 @@
+.makeStyles-table-12 {
+	min-width: 60% !important;
+	width: 90% !important;
+	margin: 0 auto !important;
+}
+
+.select-action-options.customize .select-action {
+	width: 90%;
+	margin-left: auto;
+	background: linear-gradient(
+		90deg,
+		rgba(9, 233, 191, 1) 0%,
+		rgba(10, 199, 224, 1) 100%
+	);
+}
+.select-action-options.customize option {
+	text-align: center;
+	font-size: 18px;
+	color: #0ac9de;
+	font-weight: 600;
+}

@@ -1,0 +1,2 @@
+export const GET_SERVICE = "GET_SERVICE";
+export const GET_SERVICE_ERROR = "GET_SERVICE_ERROR";

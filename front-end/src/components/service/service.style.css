@@ -1,0 +1,13 @@
+.service-section {
+	text-align: center;
+	padding: 60px 0px;
+}
+
+.service-section h1 {
+	font-size: 34px;
+	color: #18c7be;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 90px;
+	display: block;
+}

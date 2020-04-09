@@ -1,0 +1,116 @@
+.prescription-form-content {
+	height: 80vh;
+	padding: 40px 20px;
+	overflow-y: scroll;
+}
+.prescription-form-content::-webkit-scrollbar {
+	width: 5px;
+	background-color: transparent;
+}
+
+.prescription-form-content::-webkit-scrollbar-thumb {
+	border-radius: 15px;
+	-webkit-box-shadow: inset 0 0 6px #fff;
+	background-color: #fff;
+}
+
+.prescription-form-content:hover::-webkit-scrollbar-thumb {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.prescription-form-content input {
+	padding: 10px;
+	width: 100%;
+	border: 0.5px solid #c3c3c3;
+	border-radius: 3px;
+	font-size: 14px;
+	color: #000000;
+	font-weight: 300;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	display: inline-block;
+}
+
+.pf-item {
+	display: flex;
+	justify-content: space-between;
+}
+
+.pf-item input[type="text"] {
+	width: 50%;
+}
+
+.pf-item select {
+	width: 15%;
+	height: 40px;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.pf-item input[type="number"] {
+	width: 10%;
+}
+
+.prescription-form-content .custom-btn {
+	margin-left: auto;
+	text-align: right;
+	display: flex;
+	margin-right: 6%;
+}
+.info {
+	display: flex;
+	justify-content: space-between;
+	/* margin-bottom: 40px; */
+	height: 20%;
+}
+
+.info h4 {
+	font-size: 18px;
+	color: #2dd7d0;
+}
+
+.info span {
+	font-size: 14px;
+	font-weight: 400;
+	color: #737373;
+}
+
+.prescription-form-content {
+	padding-top: 25px;
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.medicine-list li {
+	display: flex;
+	justify-content: space-between;
+	background: #fbfbfb;
+	height: 50px;
+	align-items: center;
+	font-size: 16px;
+	font-weight: 500;
+	color: #757575;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.medicine-list {
+	margin-bottom: 30px;
+	width: 100%;
+	margin: 0 auto;
+	height: 45%;
+}
+.prescription-form-content .custom-btn-group {
+	width: 40%;
+	margin-right: 4%;
+}
+.prescription-form-content form {
+	height: 20%;
+}
+
+.pf-item input[type="text"] {
+	width: 70%;
+}

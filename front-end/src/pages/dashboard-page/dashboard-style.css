@@ -1,0 +1,94 @@
+.dashboard-page {
+	height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.dashboard-page:after {
+	content: "";
+	right: 0;
+	top: -100px;
+	background: #3a4256;
+	height: 100%;
+	width: 28%;
+	position: absolute;
+}
+.dashboard-page:before {
+	position: absolute;
+	content: "";
+	left: 0;
+	top: -100px;
+	background: url("/hero-bg.png");
+	height: 100vh;
+	width: 100%;
+}
+.dashboard-content {
+	height: 95vh;
+	box-shadow: 2px 1px 20px 3px #8a8686;
+	background: #f4fdfb;
+	width: 100%;
+	position: relative;
+	z-index: 9;
+}
+
+/* Panels */
+.dashboard-panels {
+	height: 100%;
+	display: flex;
+}
+
+.custom-tab-pills {
+	height: 100%;
+	padding: 30px 20px;
+	background: linear-gradient(
+		0deg,
+		rgba(10, 199, 224, 1) 37%,
+		rgba(9, 233, 191, 1) 57%
+	);
+}
+.custom-tab-pills {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.custom-tab-pills a {
+	font-size: 14px;
+	color: #fff !important;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+.custom-tab-pills svg {
+	margin-right: 15px;
+}
+
+.tab-action a {
+	margin-left: 15px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.dashboard-content-block {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.dashboard-content-navigation {
+	width: 15%;
+}
+
+.dashboard-content-items {
+	width: 85%;
+	padding: 30px 30px;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+	background: none !important;
+	color: #0680b7 !important;
+}

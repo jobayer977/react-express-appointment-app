@@ -1,0 +1,24 @@
+.status-box {
+	background: green;
+	color: #fff;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0px 10px;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 0px;
+	border-radius: 5px;
+	width: 100px;
+}
+
+.st-pending {
+	background: #76c5ff !important;
+}
+.st-approved {
+	background: #38af86 !important;
+}
+.st-cancelled {
+	background: #ff7676 !important;
+}

@@ -1,0 +1,41 @@
+.header-section {
+	position: relative;
+	z-index: 999;
+}
+.logo {
+	height: 100px;
+	display: flex;
+	align-items: center;
+}
+.options {
+	display: flex;
+	justify-content: space-between;
+	min-height: 100px;
+	align-items: center;
+}
+
+.option a {
+	font-size: 14px;
+	color: #747474;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-decoration: none;
+	transition: 0.1s all ease-in-out;
+}
+.option a:hover {
+	color: #18d3b1 !important;
+}
+.option:nth-child(5) a {
+	color: white !important;
+}
+
+.option:nth-child(6) a {
+	color: white !important;
+}
+.option:nth-child(5) a:hover {
+	color: #18d3b1 !important;
+}
+
+.option:nth-child(6) a:hover {
+	color: #18d3b1 !important;
+}

@@ -1,0 +1,8 @@
+.statistic-block {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+.dashboard-area {
+	width: 85%;
+}
