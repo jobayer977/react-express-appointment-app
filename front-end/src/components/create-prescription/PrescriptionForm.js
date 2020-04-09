@@ -45,6 +45,9 @@ const PrescriptionForm = ({
 				updateMedicine(data._id, formData);
 				makePrescription(data._id);
 				setFormData(null);
+				setTimeout(() => {
+					closeModal();
+				}, 4000);
 			}
 		}
 		e.preventDefault();
@@ -84,6 +87,9 @@ const PrescriptionForm = ({
 								required
 							/>
 							<select name="time" id="" onChange={onChangeHandler} required>
+								<option value="time" disabled selected>
+									Time
+								</option>
 								<option value="1+0+0">1+0+1</option>
 								<option value="1+0+1">1+0+1</option>
 								<option value="0+0+1">0+0+1</option>
