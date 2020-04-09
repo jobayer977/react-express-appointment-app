@@ -23,6 +23,7 @@ import {
 	updateAppointmentStatus,
 	makePrescription,
 	updateMedicine,
+	getStatusCount,
 } from "../../redux/appointment/appointment.actions";
 
 import StatusItem from "../status-item/StatusItem";
@@ -48,6 +49,7 @@ const RecentAppointment = ({
 	updateAppointmentStatus,
 	makePrescription,
 	updateMedicine,
+	getStatusCount,
 }) => {
 	const [selectedDate, handleDateChange] = useState(new Date());
 
@@ -62,6 +64,7 @@ const RecentAppointment = ({
 	};
 
 	const actionsChanger = (appointment, e) => {
+		getStatusCount();
 		updateAppointmentStatus(appointment, e.target.value);
 	};
 
@@ -175,4 +178,5 @@ export default connect(mapStateToProps, {
 	getAppointmentsByDate,
 	updateAppointmentStatus,
 	makePrescription,
+	getStatusCount,
 })(RecentAppointment);

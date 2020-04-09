@@ -7,10 +7,11 @@ import { connect } from "react-redux";
 import { getStatusCount } from "../../redux/appointment/appointment.actions";
 import { PulseLoaderSpinner } from "../utils/Spinner";
 
-const Dashboard = ({ getStatusCount, count }) => {
+const Dashboard = ({ getStatusCount, count, appointments }) => {
 	useEffect(() => {
 		getStatusCount();
 	}, [getStatusCount]);
+
 	return count.loading ? (
 		<PulseLoaderSpinner loading={count.loading} />
 	) : (
@@ -48,6 +49,7 @@ const Dashboard = ({ getStatusCount, count }) => {
 };
 
 const mapStateToProps = (state) => ({
+	appointments: state.appointment.appointments,
 	count: state.appointment,
 });
 

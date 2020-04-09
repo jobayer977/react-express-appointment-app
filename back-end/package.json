@@ -2,7 +2,7 @@
 	"name": "back-end",
 	"version": "1.0.0",
 	"description": "",
-	"main": "node server.js",
+	"main": "server.js",
 	"engines": {
 		"node": "v10.15.0"
 	},
@@ -23,7 +23,7 @@
 	},
 	"devDependencies": {},
 	"scripts": {
-		"start": "nodemon server.js"
+		"start": "node server.js"
 	},
 	"keywords": [],
 	"author": "",
