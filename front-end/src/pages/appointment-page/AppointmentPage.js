@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Calendar from "react-calendar";
 import "./appointment.styles.css";
 import "react-calendar/dist/Calendar.css";
@@ -9,6 +9,12 @@ import { getAppointmentDate } from "../../redux/appointment/appointment.actions"
 import Alert from "../../components/utils/Alert";
 
 const AppointmentPage = ({ getAppointmentDate }) => {
+	useEffect(() => {
+		window.scrollTo({
+			top: 0,
+			behavior: "smooth",
+		});
+	}, []);
 	const onChangeHandler = (date) => {
 		getAppointmentDate(date);
 	};

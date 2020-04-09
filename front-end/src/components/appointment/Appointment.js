@@ -54,7 +54,6 @@ const Appointment = ({
 		updateVisitedAppointment(appointment);
 		getAppointments();
 	};
-	console.log(secudule);
 
 	return loading ? (
 		<PulseLoaderSpinner loading={loading} />

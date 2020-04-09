@@ -51,13 +51,23 @@ const ServiceItem = ({
 	const closeModal = () => {
 		setModal({ open: false });
 	};
+
 	const onSubmithandler = (e) => {
-		makeAppointment(appointmentData);
-		setAppointmentData(null);
-		setTimeout(() => {
-			closeModal();
-		}, 4000);
-		// e.preventDefault();
+		if (appointmentData.gender) {
+			makeAppointment(appointmentData);
+			setAppointmentData(null);
+			setTimeout(() => {
+				closeModal();
+			}, 4000);
+			setTimeout(() => {
+				window.scrollTo({
+					top: 0,
+					behavior: "smooth",
+				});
+			}, 4500);
+		} else {
+			alertAction("Please Select Your Gender", "danger");
+		}
 	};
 
 	const onChangeHandler = (e) => {
@@ -116,9 +126,10 @@ const ServiceItem = ({
 								ref={register({ required: true })}
 								name="gender"
 								onChange={onChangeHandler}>
-								<option value="male" selected>
-									Male
+								<option disabled selected>
+									Gender
 								</option>
+								<option value="male">Male</option>
 								<option value="female">Female</option>
 								<option value="custom">Custom</option>
 							</select>
