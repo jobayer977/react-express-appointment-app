@@ -19,3 +19,10 @@
 	color: #0ac9de;
 	font-weight: 600;
 }
+.MuiTable-root.jss12 {
+	width: 100% !important;
+	min-width: 100% !important;
+}
+.custom-table-fullwidth {
+	min-width: 100% !important;
+}

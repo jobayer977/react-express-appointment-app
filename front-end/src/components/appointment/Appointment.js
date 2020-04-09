@@ -7,6 +7,7 @@ import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
 import TableContainer from "@material-ui/core/TableContainer";
 import TableHead from "@material-ui/core/TableHead";
+import Moment from "react-moment";
 import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
 import SecondaryTitle from "../secondary-title/SecondaryTitle";
@@ -53,6 +54,7 @@ const Appointment = ({
 		updateVisitedAppointment(appointment);
 		getAppointments();
 	};
+	console.log(secudule);
 
 	return loading ? (
 		<PulseLoaderSpinner loading={loading} />
@@ -67,13 +69,19 @@ const Appointment = ({
 					<div className="content-heading">
 						<SecondaryTitle primary>Appointments</SecondaryTitle>
 						<div className="till-date">
-							<span>07 Feb 2020</span>
+							<span>
+								<Moment format="D MMM YYYY" withTitle>
+									{secudule ? secudule : new Date().toString()}
+								</Moment>
+							</span>
 						</div>
 					</div>
 					<div className="appointment-list">
 						<div className="table-content">
 							<TableContainer component={Paper}>
-								<Table className={classes.table} aria-label="simple table">
+								<Table
+									className={`${classes.table} custom-table-fullwidth`}
+									aria-label="simple table">
 									<TableHead>
 										<TableRow>
 											<TableCell align="left">Name</TableCell>

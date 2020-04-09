@@ -8,7 +8,14 @@ const PriscriptionView = ({ data }) => {
 	const [modal, setModal] = useState({
 		open: false,
 	});
-	const { contact, name, sex, age, medicine, date } = data;
+	const {
+		contact,
+		name,
+		sex,
+		age,
+		prescription: { medicine },
+		date,
+	} = data;
 	const openModal = () => {
 		setModal({ open: true });
 	};

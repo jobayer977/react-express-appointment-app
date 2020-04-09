@@ -57,8 +57,8 @@ const appointmentReducer = (state = initState, action) => {
 			return {
 				...state,
 				appointments: state.appointments.map((x) =>
-					x._id === action.payload
-						? { ...x, prescription: { status: true } }
+					x._id === action.payload._id
+						? { ...x, prescription: { ...x.prescription, status: true } }
 						: x
 				),
 				loading: false,

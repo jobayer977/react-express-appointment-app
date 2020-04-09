@@ -9,12 +9,14 @@ import {
 } from "../../redux/appointment/appointment.actions";
 import { connect } from "react-redux";
 import Alert from "../utils/Alert";
+import { alertAction } from "../../redux/alert/alertAction";
 
 const PrescriptionForm = ({
 	makePrescription,
 	data,
 	updateMedicine,
 	getAppointments,
+	alertAction,
 }) => {
 	const { prescription, patientName, age, gender } = data;
 	const [formData, setFormData] = useState(null);
@@ -36,9 +38,14 @@ const PrescriptionForm = ({
 	};
 
 	const onSubmitHandler = (e) => {
-		makePrescription(data._id);
 		if (formData) {
-			updateMedicine(data._id, formData);
+			if (!formData.time) {
+				alertAction("Please Select Time Field", "danger");
+			} else {
+				updateMedicine(data._id, formData);
+				makePrescription(data._id);
+				setFormData(null);
+			}
 		}
 		e.preventDefault();
 	};
@@ -77,9 +84,7 @@ const PrescriptionForm = ({
 								required
 							/>
 							<select name="time" id="" onChange={onChangeHandler} required>
-								<option value="1+0+0" selected={true}>
-									1+0+1
-								</option>
+								<option value="1+0+0">1+0+1</option>
 								<option value="1+0+1">1+0+1</option>
 								<option value="0+0+1">0+0+1</option>
 								<option value="0+0+1">0+0+1</option>
@@ -110,4 +115,5 @@ export default connect(null, {
 	makePrescription,
 	updateMedicine,
 	getAppointments,
+	alertAction,
 })(PrescriptionForm);

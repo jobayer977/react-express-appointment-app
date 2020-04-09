@@ -58,8 +58,18 @@ const Prescriptions = ({
 	};
 	const arr = [];
 	appointments.map((x) => {
-		return arr.push(x.prescription);
+		return x.prescription.status == true
+			? arr.push({
+					name: x.patientName,
+					contact: x.phone,
+					prescription: x.prescription,
+					schedule: x.schedule,
+					date: x.date,
+			  })
+			: "";
 	});
+
+	console.log(arr);
 
 	return loading ? (
 		<PulseLoaderSpinner loading={loading} />
